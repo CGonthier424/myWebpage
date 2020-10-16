@@ -3,6 +3,9 @@ Read me for HW4 GUI Programming 1
 HW2 link:http://cs.uml.edu/~cgonthie/
 HW4 Link:cgonthier424.github.io/mywebpage/
 
+IF you want link to my github repository it is link in my About me page or right here:
+https://github.com/CGonthier424/myWebpage
+
 Summary of revision:
 First major thing is splitting my webpage into 3 seperate pages; Home, About Me, and Gallery
 
