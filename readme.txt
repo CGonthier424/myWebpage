@@ -6,6 +6,13 @@ HW4 Link:cgonthier424.github.io/mywebpage/
 IF you want link to my github repository it is link in my About me page or right here:
 https://github.com/CGonthier424/myWebpage
 
+All HTML file links are as followed:
+https://cgonthier424.github.io/myWebpage/index.html
+https://cgonthier424.github.io/myWebpage/aboutme.html
+https://cgonthier424.github.io/myWebpage/gallery.html
+
+
+
 Summary of revision:
 First major thing is splitting my webpage into 3 seperate pages; Home, About Me, and Gallery
 
