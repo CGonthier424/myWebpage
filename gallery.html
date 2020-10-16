@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!-- File: public_html/hw4/gallery.html
+     Connor Gonthier
+     Connor_gonthier@student.uml.edu
+     UMass Lowell Computer Science Student taking 91.61 GUI Programming I
+     10/12/20
+     Bootstrap version of personal website  -->
+
+     <!-- Techniques were learned from w3schools
+      Design style inpiration was taken from w3schools example:
+      https://www.w3schools.com/css/tryit.asp?filename=trycss_website_layout_blog
+      Also style taken from my finished version of Inlcass excercise 3 for GUI Programming I
+-->
+
+<html lang="en">
+  <head>
+    <!-- Meta Tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Connor Gonthier">
+
+    <!-- Bootstrap Stylesheet-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery Library & compiled JavaScript-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <title>CGonthier Gallery</title>
+    <!-- Little styling to have nice spacing with navbar and background color -->
+    <style>
+      body{
+        padding-top: 70px;
+        background-color: BurlyWood;
+      }
+    </style>
+  </head>
+<body>
+<!--  Inverse nav bar from https://www.w3schools.com/bootstrap/bootstrap_navbar.asp
+and Inclass Exercise 3 for collapseable with button  -->
+  <div class="container-fluid">
+    <div class="row content">
+      <!-- Navbar creation -->
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container">
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#">CGonthier's Webpage</a>
+              </div>
+              <div id="navbar" class="navbar-collapse collapse">
+                  <ul class="nav navbar-nav">
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="aboutme.html">About Me</a></li>
+                      <li class="active"><a href="#top">Gallery</a></li>
+                      <!-- Dropdown for my Homework links -->
+                      <li class ="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href='#'>GUI I Homework <span class="caret"></span></a>
+                        <ol start="2" class="dropdown-menu">
+                          <li><a href="http://www.cs.uml.edu/~cgonthie/" "#">HTML</a></li>
+                          <li role ="separator" class="divider"></li>
+                          <li><a href="http://www.cs.uml.edu/~cgonthie/hw3/" "#">CSS</a></li>
+                          <li role ="separator" class="divider"></li>
+                          <li><a href "#">Bootstrap</a></li>
+                          <li role ="separator" class="divider"></li>
+                          <li><a href "#">Javascript</a></li>
+                          <li role ="separator" class="divider"></li>
+                          <li><a href "#">jQuery1</a></li>
+                          <li role ="separator" class="divider"></li>
+                          <li><a href "#">jQuery2</a></li>
+                          <li role ="separator" class="divider"></li>
+                          <li><a href "#">Final</a></li>
+                        </ol>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+
+<!-- Used to line up Jumbotron with img gallery -->
+  <div class="container">
+
+    <div class="jumbotron">
+      <h2 class="text-center"> Photos Gallery</h2>
+    </div>
+
+  <!-- gallery derived from W3 version https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_img_thumbnail2&stacked=h-->
+
+  <div class="row">
+
+    <div class="col-xs-12 col-sm-6 ">
+      <div class="thumbnail">
+        <img src="images/lucky.jpg" alt="My dog Lucky" class="img-responsive" width="60%" height="60%">
+        <div class="caption"><h5 class="text-center"><strong>My dog Lucky!</strong><h5></div>
+      </div>
+    </div><!--  Img1 done  -->
+
+    <div class="col-xs-12 col-sm-6">
+      <div class="thumbnail">
+        <img src="images/connor.jpg" alt="Photo of me, Connor" class="img-responsive" width="60%" height="60%">
+        <div class="caption"><h5 class="text-center"><strong>Me!</strong><h5></div>
+      </div>
+    </div><!-- Img2 done   -->
+
+  </div><!-- row closing   -->
+</div><!--  container closing  -->
+</body>
+</html>

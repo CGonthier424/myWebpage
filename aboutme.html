@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!-- File: public_html/hw4/aboutme.html
+     Connor Gonthier
+     Connor_gonthier@student.uml.edu
+     UMass Lowell Computer Science Student taking 91.61 GUI Programming I
+     10/12/20
+     Bootstrap version of personal website  -->
+
+     <!-- Techniques were learned from w3schools
+      Design style inpiration was taken from w3schools example:
+      https://www.w3schools.com/css/tryit.asp?filename=trycss_website_layout_blog
+      Also style taken from my finished version of Inlcass excercise 3 for GUI Programming I
+-->
+
+<html lang="en">
+  <head>
+    <!-- Meta Tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Connor Gonthier">
+
+    <!-- Bootstrap Stylesheet-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery Library & compiled JavaScript-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <title>CGonthier About Me</title>
+    <!-- Little styling to have nice spacing with navbar and background color -->
+    <style>
+      body{
+        padding-top: 70px;
+        background-color: BurlyWood;
+      }
+    </style>
+  </head>
+<body>
+<!--  Inverse nav bar from https://www.w3schools.com/bootstrap/bootstrap_navbar.asp
+and Inclass Exercise 3 for collapseable with button  -->
+  <div class="container-fluid">
+    <div class="row content">
+      <!-- Navbar creation -->
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container">
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#">CGonthier's Webpage</a>
+              </div>
+              <div id="navbar" class="navbar-collapse collapse">
+                  <ul class="nav navbar-nav">
+                      <li><a href="index.html">Home</a></li>
+                      <li class="active"><a href="aboutme.html">About Me</a></li>
+                      <li><a href="gallery.html">Gallery</a></li>
+                      <!-- Dropdown for my Homework links -->
+                      <li class ="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href='#'>GUI I Homework <span class="caret"></span></a>
+                        <ol start="2" class="dropdown-menu">
+                          <li><a href="http://www.cs.uml.edu/~cgonthie/" "#">HTML</a></li>
+                          <li role ="separator" class="divider"></li>
+                          <li><a href="http://www.cs.uml.edu/~cgonthie/hw3/" "#">CSS</a></li>
+                          <li role ="separator" class="divider"></li>
+                          <li><a href "#">Bootstrap</a></li>
+                          <li role ="separator" class="divider"></li>
+                          <li><a href "#">Javascript</a></li>
+                          <li role ="separator" class="divider"></li>
+                          <li><a href "#">jQuery1</a></li>
+                          <li role ="separator" class="divider"></li>
+                          <li><a href "#">jQuery2</a></li>
+                          <li role ="separator" class="divider"></li>
+                          <li><a href "#">Final</a></li>
+                        </ol>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+<!--    -->
+
+      <!--About Me section -->
+      <div class="container-fluid">
+        <div class="row">
+          <!--  Making about me to the left of My CS courses panel but larger  -->
+          <div class="col-md-8">
+            <div class="jumbotron">
+              <h2> About me</h2>
+              <hr>
+              <p>I am a Computer Science student at University of Massachusetts Lowell. I grew up in Bellingham, Massachusetts, during the school year I live off campus in an apartment in Lowell.
+                Before becoming a Computer Science student my only coding experience came learning Labview when I participated in FIRST Robotics in 2017. Although Labview is a visual programming
+                language and greatly limited potential it was the perfect platform for someone with no coding experience to program my robot to do basic autonomous functions. Since then I have learned
+                the C and C++ Languages and hope to expand my knowledge by taking Database 1 and GUI 1 this semester and narrow down what style of development I would like to focus on for my career.
+              </p>
+              <hr>
+              <h6>Contact me at: Connor_gonthier@student.uml.edu</h6>
+            </div>
+          </div>
+          <!-- Transition to 2nd element on page-->
+          <div class="col-md-4">
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <!--Courses Taken
+              Pannel style from W3 Schools aswell as button infromation-->
+                <h2 class="panel-title">Relavent Computer Science Courses Taken<h2>
+              </div>
+              <div class="panel-body"><a target="_blank" href="https://www.uml.edu/catalog/courses/comp/1010" class="btn btn-primary" role="button">Computing 1-4  </a>  </div>
+              <div class="panel-body"><a target="_blank" href="https://www.uml.edu/catalog/courses/comp/1010" class="btn btn-primary" role="button">Assembly Language Progamming  </a>  </div>
+              <div class="panel-body"><a target="_blank" href="https://www.uml.edu/catalog/courses/comp/1010" class="btn btn-primary" role="button">Foundations of Computer Science  </a></div>
+              <div class="panel-body"><a target="_blank" href="https://www.uml.edu/catalog/courses/comp/1010" class="btn btn-primary" role="button">Computer Architecture  </a></div>
+              <div class="panel-body"><a target="_blank" href="https://www.uml.edu/catalog/courses/comp/1010" class="btn btn-primary" role="button">Organization of Programming Languages<  </a></div>
+              <div class="panel-body"><a target="_blank" href="https://www.uml.edu/catalog/courses/comp/1010" class="btn btn-primary" role="button">Intro to Opertationg Systems  </a></div>
+              </div>
+            </div>
+
+          </div><!-- row content /close -->
+        </div><!-- container-fluid /close -->
+
+    </div><!-- row content /close -->
+  </div><!-- container-fluid /close -->
+</body>
+</html>

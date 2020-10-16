@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!-- File: public_html/hw4/index.html
+     Connor Gonthier
+     Connor_gonthier@student.uml.edu
+     UMass Lowell Computer Science Student taking 91.61 GUI Programming I
+     10/12/20
+     Bootstrap version of personal website  -->
+
+     <!-- Techniques were learned from w3schools
+      Design style inpiration was taken from w3schools example:
+      https://www.w3schools.com/css/tryit.asp?filename=trycss_website_layout_blog
+      Also style taken from my finished version of Inlcass excercise 3 for GUI Programming I
+-->
+
+<html lang="en">
+  <head>
+    <!-- Meta Tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Connor Gonthier">
+
+    <!-- Bootstrap Stylesheet-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery Library & compiled JavaScript-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <title>CGonthier Home</title>
+    <!-- Little styling to have nice spacing with navbar and background color -->
+    <style>
+      body{
+        padding-top: 70px;
+        background-color: BurlyWood;
+      }
+    </style>
+  </head>
+<body>
+<!--  Inverse nav bar from https://www.w3schools.com/bootstrap/bootstrap_navbar.asp
+and Inclass Exercise 3 for collapseable with button  -->
+  <div class="container-fluid">
+    <div class="row content">
+      <!-- Navbar creation -->
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container">
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#">CGonthier's Webpage</a>
+              </div>
+              <div id="navbar" class="navbar-collapse collapse">
+                  <ul class="nav navbar-nav">
+                      <li class="active"><a href="index.html">Home</a></li>
+                      <li><a href="aboutme.html">About Me</a></li>
+                      <li><a href="gallery.html">Gallery</a></li>
+                      <!-- Dropdown for my Homework links -->
+                      <li class ="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href='#'>GUI I Homework <span class="caret"></span></a>
+                        <ol start="2" class="dropdown-menu">
+                          <li><a href="http://www.cs.uml.edu/~cgonthie/" "#">HTML</a></li>
+                          <li role ="separator" class="divider"></li>
+                          <li><a href="http://www.cs.uml.edu/~cgonthie/hw3/" "#">CSS</a></li>
+                          <li role ="separator" class="divider"></li>
+                          <li><a href "#">Bootstrap</a></li>
+                          <li role ="separator" class="divider"></li>
+                          <li><a href "#">Javascript</a></li>
+                          <li role ="separator" class="divider"></li>
+                          <li><a href "#">jQuery1</a></li>
+                          <li role ="separator" class="divider"></li>
+                          <li><a href "#">jQuery2</a></li>
+                          <li role ="separator" class="divider"></li>
+                          <li><a href "#">Final</a></li>
+                        </ol>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+<!--    -->
+
+      <!--Home Introduction section of my webpage-->
+    <div class="jumbotron">
+        <div class="container" >
+          <div class="row">
+            <div class="col-md-4">
+            <h2> Welcome to my Webpage!</h2>
+          </div>
+          <!-- To push my Picture to the right side of the container -->
+          <div class="col-md-8 col-md-push-4">
+            <img src="images/connor.jpg" class="img-responsive" alt="Picture of me"height="20%" width="20%">
+          </div>
+        </div>
+        <div class="col-sm-8">
+          <p> This is my first and personal website that was created for GUI Programming I</p>
+          <p> Here I will host links to my work to be able to show off as a portfolio down the line </p>
+
+        </div>
+      </div>
+    </div><!--Closing Jumbotron Div -->
+
+  </div><!-- Row div closing   -->
+</div><!--  container-fluid div closing  -->
+
+</body>
+</html>
